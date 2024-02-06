@@ -46,7 +46,7 @@ def desifruj_poruku(poruka):
 
 # key = Fernet.generate_key()
 global key
-key = b'5zIvqVejFHSBZlS8gmWYvJ7z8EDuCFgvenloiomROTY='
+key = b'Uklonili smo kljuc zbog hakera, moze se naci u izvjestaju'
 cipher_suite = Fernet(key)
 global dugme
 global alfabet
