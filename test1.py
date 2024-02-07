@@ -105,19 +105,5 @@ def finish_reg(temp_name, temp_lastname, temp_age, temp_gender, temp_password, t
     print(dekriptuj(test))
     new_file.close()
 
-    os.chdir(r'C:\Users\eniz.balihodzic\Downloads\pythonProject1\Izvjestaji')
-    new_file = open("izvjestaj_" + name + ".txt", "w")
-    new_file.write("-------------------------------------------\n")
-    new_file.write("Izvještaj za korisnika: " + name + " " + lastname + " :" + '\n');
-    current_date_time = datetime.now()
-    danas = datetime.now()
-    formatted_date_time = current_date_time.strftime("%d.%m.%Y %H:%M:%S")
-    new_file.write("Izvještaj kreiran " + formatted_date_time + '\n')
-    new_file.write("-------------------------------------------")
-    new_file.close()
-    os.chdir(r'C:\Users\eniz.balihodzic\Downloads\pythonProject1\Stanja racuna')
-    new_file = open(pomocno_ime, "wb")
-    new_file.write(enkriptuj(str(stanje_racuna)))
-    new_file.close()
-    #temp_name, temp_lastname, temp_age, temp_gender, temp_password, temp_status, temp_email, notif
+    
     notif.config(fg="green", text="Account has been created")
