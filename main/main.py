@@ -127,7 +127,10 @@ def finish_reg():
         name + '\n' + lastname + '\n' + password + '\n' + age + '\n' + gender + '\n' + status + '\n' + email + '\n' + broj_racuna)
     print(dekriptuj(test))
     new_file.close()
-
+    os.chdir(r'C:\Users\eniz.balihodzic\Downloads\pythonProject1\Stanja racuna')
+    new_file = open(pomocno_ime, "wb")
+    new_file.write(enkriptuj(str(stanje_racuna)))
+    new_file.close()
     
     notif.config(fg="green", text="Korisnicki racun je kreiran!")
 
