@@ -2,7 +2,7 @@ import unittest
 from tkinter import Label
 from test1 import finish_reg
 
-#Test ukoliko pokusamo kreirati racun sa jednim praznim poljem
+#Test ukoliko pokusamo kreirati racun sa dva prazna polja
 class TestFinishRegFunction(unittest.TestCase):
     def setUp(self):
         pass
